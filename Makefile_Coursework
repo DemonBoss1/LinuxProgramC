@@ -1,0 +1,5 @@
+main: main.o func1.o func2.o lab3.o lab4.o lab5.o ArgPrint
+	gcc -o main main.o func1.o func2.o lab3.o lab4.o lab5.o
+
+main.o: main.c main_header.h func1.h func2.h
+	gcc -O0 -g3 -Wall -c main.
